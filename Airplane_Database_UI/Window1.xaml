@@ -1,0 +1,16 @@
+﻿<Window x:Class="Airplane_Database_UI.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Airplane_Database_UI"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800" Background="DarkBlue">
+    <Border Background="LightBlue" Margin="20" CornerRadius="40">
+        <StackPanel>
+            <Label Content="Flight Search" FontSize="30" HorizontalAlignment="Center" FontFamily="Bahnschrift Light"/>
+            <TextBlock TextWrapping="Wrap" FontSize="15" Text="Flight Number:" Margin="15,30,618.333,0" Height="20"/>
+            <TextBox Height="20" TextWrapping="Wrap" Text="" Margin="120,-20,437.333,30"/>
+        </StackPanel>
+    </Border>
+</Window>
