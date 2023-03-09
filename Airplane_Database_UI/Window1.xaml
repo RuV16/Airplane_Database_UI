@@ -8,9 +8,14 @@
         Title="Window1" Height="450" Width="800" Background="DarkBlue">
     <Border Background="LightBlue" Margin="20" CornerRadius="40">
         <StackPanel>
-            <Label Content="Flight Search" FontSize="30" HorizontalAlignment="Center" FontFamily="Bahnschrift Light"/>
-            <TextBlock TextWrapping="Wrap" FontSize="15" Text="Flight Number:" Margin="15,30,618.333,0" Height="20"/>
-            <TextBox Height="20" TextWrapping="Wrap" Text="" Margin="120,-20,437.333,30"/>
+            <Label Content="Flight Info" FontSize="30" HorizontalAlignment="Center" FontFamily="Bahnschrift Light"/>
+            <TextBlock TextWrapping="Wrap" FontSize="15" Text="Flight Number:" Margin="15,15,618.333,0" Height="20"/>
+            <TextBox x:Name="FlightNo" Height="20" TextWrapping="Wrap" Text="" Margin="120,-20,437.333,0"/>
+            <DataGrid x:Name="DataGrid_" Height="215" Width="600" Margin="0,10,0,10"/>
+            <Button x:Name="LoadB" Content="Search" Width="100" Click="Button_Click" Margin="327,0,326.333,0"/>
+            <Button x:Name="SPage" Content="Schedule Info" Width="100" Click="SPage_Click" Margin="0,10,326.333,0" />
+            <Button x:Name="PInfo" Content="Plane Info" Width="100" Click="PPage_Click" Margin="327,-20.667,326.333,0"/>
+            <Button x:Name="TInfo" Content="Ticket Info" Width="100" Click="TPage_Click" Margin="327,-20.667,0,0"/>
         </StackPanel>
     </Border>
 </Window>

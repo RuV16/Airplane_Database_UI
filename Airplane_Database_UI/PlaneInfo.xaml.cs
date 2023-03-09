@@ -17,11 +17,11 @@ using System.Windows.Shapes;
 namespace Airplane_Database_UI
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for PlaneInfo.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class PlaneInfo : Window
     {
-        public Window1()
+        public PlaneInfo()
         {
             InitializeComponent();
         }
@@ -34,7 +34,7 @@ namespace Airplane_Database_UI
             try
             {
                 sqlCon_.Open();
-                string query = $"Select * from Flight where FlightNo = {FlightNo.Text}";
+                string query = $"Select * from Plane where PlaneID = {PlID.Text}";
                 SqlCommand cmd = new SqlCommand(query, sqlCon_);
                 cmd.ExecuteNonQuery();
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
@@ -56,24 +56,10 @@ namespace Airplane_Database_UI
             finally { sqlCon_.Close(); }
         }
 
-        private void PPage_Click(object sender, RoutedEventArgs e)
+        private void Back_Click(object sender, RoutedEventArgs e)
         {
-            PlaneInfo p1 = new PlaneInfo();
-            p1.Show();
-            this.Close();
-        }
-
-        private void SPage_Click(object sender, RoutedEventArgs e)
-        {
-            Window2 w2 = new Window2();
-            w2.Show();
-            this.Close();
-        }
-
-        private void TPage_Click(object sender, RoutedEventArgs e)
-        {
-            TicketInfo t = new TicketInfo();
-            t.Show();
+            Window1 w1 = new Window1();
+            w1.Show();
             this.Close();
         }
     }

@@ -1,0 +1,30 @@
+﻿<Window x:Class="Airplane_Database_UI.SignUpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Airplane_Database_UI"
+        mc:Ignorable="d"
+        Title="SignUpWindow" Height="450" Width="800" Background="DarkBlue">
+    <Border Background="LightBlue" Margin="20" CornerRadius="40">
+        <StackPanel>
+            <Label Content="Sign Up" FontSize="30" HorizontalAlignment="Center" FontFamily="Bahnschrift Light"/>
+            <TextBlock TextWrapping="Wrap" FontSize="15" Text="Username:" Margin="20,30,618.333,0" Height="20"/>
+            <TextBox Height="20" TextWrapping="Wrap" Text="" Margin="100,-20,437.333,30"/>
+            <TextBlock TextWrapping="Wrap" FontSize="15" Text="Password:" Margin="20,0,618.333,0" Height="20"/>
+            <PasswordBox Height="20" Margin="100,-20,437.333,30"/>
+            <TextBlock TextWrapping="Wrap" FontSize="15" Text="Name:" Margin="20,0,618.333,0" Height="20"/>
+            <TextBox Height="20" TextWrapping="Wrap" Text="" Margin="100,-20,437.333,20"/>
+            <Menu Width ="200" Margin="-235,10,276.333,20">
+                <MenuItem x:Name="mItem" Header="Position">
+                    <MenuItem Header="Crewmate" Click="cmclick"/>
+                    <MenuItem Header="HelpDesk" Click="hdclick"/>
+                    <MenuItem Header="Maintenance" Click="mclick"/>
+                </MenuItem>
+            </Menu>
+            <Button Content="Submit" Width="100" Click="Return_Click" Margin="277,15,276.333,0"/>
+            <Button Content="Back" Width="100" Click="Back_Click" Margin="-335,15,276.333,0"/>
+
+        </StackPanel>
+    </Border>
+</Window>

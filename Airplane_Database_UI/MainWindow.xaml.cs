@@ -24,5 +24,19 @@ namespace Airplane_Database_UI
         {
             InitializeComponent();
         }
+        
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 w1 = new Window1();
+            w1.Show();
+            this.Close();
+        }
+
+        private void Sign_Click(object sender, RoutedEventArgs e)
+        {
+            SignUpWindow s1 = new SignUpWindow();
+            s1.Show();
+            this.Close();
+        }
     }
 }

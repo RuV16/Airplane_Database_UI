@@ -12,8 +12,11 @@
             <TextBlock TextWrapping="Wrap" FontSize="15" Text="Username:" Margin="20,30,618.333,0" Height="20"/>
             <TextBox Height="20" TextWrapping="Wrap" Text="" Margin="100,-20,437.333,30"/>
             <TextBlock TextWrapping="Wrap" FontSize="15" Text="Password:" Margin="20,0,618.333,0" Height="20"/>
-            <TextBox Height="20" TextWrapping="Wrap" Text="" Margin="100,-20,437.333,170"/>
-            <TextBlock TextWrapping="Wrap" FontSize="15" Text="Do not have a profile yet? Contact an administrator at: admin.prof@airlinename.net" Margin="225,0,225,0" Height="106" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300"/>
+            <TextBox Height="20" TextWrapping="Wrap" Text="" Margin="100,-20,437.333,150"/>
+            <Button Content="Log In" Width="200" Click="Button_Click"/>
+
+            <TextBlock TextWrapping="Wrap" FontSize="15" Margin="289,10,164.333,0" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Text="Do not have a profile yet?"/>
+            <Button Content="Press here" Width="100" Click="Sign_Click" Margin="277,0,276.333,0"/>
 
 
         </StackPanel>
